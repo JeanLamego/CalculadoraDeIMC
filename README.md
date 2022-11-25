@@ -9,6 +9,7 @@ Este projeto é sobre uma calculadora de IMC a qual o usuário passará as infor
 - [] Começar a projetar o CSS
 - [] Criando o JavaScript para interação das páginas
 - [] Consumindo API da tabela IMC para informação do usuário
+- [] Pensar em diferentes opções de background gradient
 
 ### Extra
 
