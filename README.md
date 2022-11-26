@@ -15,3 +15,4 @@ Este projeto é sobre uma calculadora de IMC a qual o usuário passará as infor
 
 - [] Criação do Tema Light para meu projeto
 - [] Possibilidade do Usuário trocar o tema Entre light e dark mode
+- [] Usuário ter a opção de salvar seus dados no cache
