@@ -1,0 +1,9 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.informations{
+    display: flex;
+    flex-direction: column;
+}
