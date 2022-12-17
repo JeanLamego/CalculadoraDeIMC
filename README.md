@@ -3,7 +3,7 @@ Este projeto é sobre uma calculadora de IMC a qual o usuário passará as infor
 
 ### Roadmap
 
-- [] Criar HTML do primeiro card
+- [x] Criar HTML do primeiro card
 - [] Criar HTML do segundo Card
 - [] Verificar responsividade
 - [] Começar a projetar o CSS
