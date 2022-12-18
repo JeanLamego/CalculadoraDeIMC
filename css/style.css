@@ -17,42 +17,79 @@ body{
 }
 
 .container-card-home {
-    background: rgb(84, 99, 107);
+    background: rgba(84, 98, 106, 0.37);
     padding: 2em;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 50vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .title{
     font-size: 1.5em;
+    letter-spacing: .2em;
     font-weight: 500;
+    
 }
 .gender-label{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2em;
-    margin: 1em 0;
+    margin: 1em;
+    
 }
 .gender{
-    background-color: rgba(0, 0, 0, 0.821);
+    background-color: rgba(0, 0, 0, 0.505);
     padding: .5em;
     font-size: 1.1em;
     border-radius: 10px;
+    cursor: pointer;
 }
 .gender-label input[type="radio"]{
     display: none;
 }
 .gender-label input[type="radio"]:checked + label{
-    border: 2px solid green;
+    border: 2px solid rgb(132, 117, 198);
 }
 .informations{
     display:flex;
     flex-direction: column;
-    
+}
+.informations p{
+    margin-top: 1em;
 }
 
+#height, #weight {
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin: .4em 0 1em 0;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.505);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    
+    
+    
+}
+button{
+    padding: .6em;
+    font-weight: 600;
+    font-size: 1.3em;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.903);
+    background-color: rgba(240, 248, 255, 0.77);
+}
 .hide{
     display: none;
 }
