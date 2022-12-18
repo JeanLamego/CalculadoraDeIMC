@@ -18,7 +18,7 @@ body{
 
 .container-card-home {
     background: rgba(84, 98, 106, 0.37);
-    padding: 2em;
+    padding: 2em 1em;
     border-radius: 5px;
     height: 50vh;
     display: flex;
@@ -110,10 +110,25 @@ button{
 }
 .imc-table{
     margin: 1em;
+    font-size: .8em;
 }
 .table-header{
     display: flex;
-    gap: 2em;
-    margin: 1em;
+    gap: 1em;
+    font-size: 1.2em;
     border-top: 1px solid grey;
+}
+
+.table-data{
+    display: flex;
+    gap: 2em;
+    margin: .3em;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.table-header h4,
+.table-data p {
+    flex: 1;
+    
 }

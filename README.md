@@ -4,12 +4,12 @@ Este projeto é sobre uma calculadora de IMC a qual o usuário passará as infor
 ### Roadmap
 
 - [x] Criar HTML do primeiro card
-- [] Criar HTML do segundo Card
-- [] Verificar responsividade
-- [] Começar a projetar o CSS
-- [] Criando o JavaScript para interação das páginas
+- [x] Criar HTML do segundo Card
+- [x] Começar a projetar o CSS
 - [] Consumindo API da tabela IMC para informação do usuário
-- [] Pensar em diferentes opções de background gradient
+- [] Criando o JavaScript para interação das páginas
+- [] Verificar responsividade
+- [x] Pensar em diferentes opções de background gradient
 
 ### Extra
 
