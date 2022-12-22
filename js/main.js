@@ -40,10 +40,15 @@ const data = [
 
   const imcTable = document.querySelector(".imc-table");
 
-  const height = document.querySelector("#height");
-  const weight = document.querySelector("#weight");
+  const radioMale= document.querySelector("#male");
+  const radioFemale= document.querySelector("#female");
+  const heightInput = document.querySelector("#height");
+  const weightInput = document.querySelector("#weight");
 
+  const calcBtn = document.querySelector("#submit");
+  const clearBtn = document.querySelector("#clear");
   const backBtn = document.querySelector("#backBtn");
+
   const firstPage = document.querySelector("#info-container");
   const resultsPage = document.querySelector("#container-card-results");
 
@@ -80,9 +85,30 @@ function showOrHideResults(){
 }
 
 function cleanInputs(){
-  height.innerHTML("");
-  weight.innerHTML("");
+  heightInput.value='';
+  weightInput.value='';
+  radioFemale.checked=false;
+  radioMale.checked=false;
 }
+function calcImc(height,weight){
+  const calcImc= (weight/ (height * height)).toFixed(2);
+  return calcImc;
+}
+
+calcBtn.addEventListener('click', function(){
+  const height = +heightInput.value.replace("," , ".");
+  const weight = +weightInput.value.replace("," , ".");
+
+  if(!weight || !height) return;
+
+  var imc = calcImc(height,weight);
+  console.log(imc);
+  showOrHideResults();
+})
+
+clearBtn.addEventListener('click', function(){
+  cleanInputs();
+})
   backBtn.addEventListener('click', function(){
     showOrHideResults();
 
