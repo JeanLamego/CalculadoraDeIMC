@@ -49,6 +49,7 @@ const data = [
   const clearBtn = document.querySelector("#clear");
   const backBtn = document.querySelector("#backBtn");
 
+  const imcNumber = document.querySelector(".imc-results span");
   const firstPage = document.querySelector("#info-container");
   const resultsPage = document.querySelector("#container-card-results");
 
@@ -102,7 +103,7 @@ calcBtn.addEventListener('click', function(){
   if(!weight || !height) return;
 
   var imc = calcImc(height,weight);
-  console.log(imc);
+  imcNumber.innerText = imc;
   showOrHideResults();
 })
 
