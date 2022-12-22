@@ -24,11 +24,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 400px;
 }
 .title{
     font-size: 1.5em;
     letter-spacing: .2em;
     font-weight: 500;
+    text-align: center;
     
 }
 .gender-label{
@@ -86,9 +88,9 @@ button{
     flex: 1;
     border: none;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 5px;
     color: rgba(0, 0, 0, 0.903);
-    background-color: rgba(240, 248, 255, 0.77);
+    background-color: rgba(240, 248, 255, 0.542);
 }
 .hide{
     display: none;
@@ -109,26 +111,34 @@ button{
     margin: 1em;
 }
 .imc-table{
+    position: relative;
     margin: 1em;
     font-size: .8em;
+    
+    
+    
 }
 .table-header{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     font-size: 1.2em;
-    border-top: 1px solid grey;
+    
 }
 
 .table-data{
-    display: flex;
-    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:2em;
     margin: .3em;
-    align-items: center;
-    justify-content: space-between;
-    
+    border-bottom: 1px solid grey;
 }
 .table-header h4,
-.table-data p {
+.table-data p:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     
 }
+
