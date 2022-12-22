@@ -123,6 +123,7 @@ clearBtn.addEventListener('click', function(){
   cleanInputs();
 })
   backBtn.addEventListener('click', function(){
+    cleanInputs();
     showOrHideResults();
 
   } )
