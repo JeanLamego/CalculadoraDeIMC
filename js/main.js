@@ -50,6 +50,7 @@ const data = [
   const backBtn = document.querySelector("#backBtn");
 
   const imcNumber = document.querySelector(".imc-results span");
+  const imcStatus = document.querySelector(".status span")
   const firstPage = document.querySelector("#info-container");
   const resultsPage = document.querySelector("#container-card-results");
 
@@ -76,8 +77,9 @@ const data = [
         imcTable.appendChild(div)
     });
   }
-
   createTable(data);
+
+
 
   
 function showOrHideResults(){
@@ -103,7 +105,17 @@ calcBtn.addEventListener('click', function(){
   if(!weight || !height) return;
 
   var imc = calcImc(height,weight);
+
+  var info;
+
+  data.forEach((item)=>{
+    if(imc>=item.min && imc<= item.max){
+      info = item.info;
+    }
+  });
+  if(!info) return;
   imcNumber.innerText = imc;
+  imcStatus.innerText = info;
   showOrHideResults();
 })
 
